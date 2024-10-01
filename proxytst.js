@@ -22,24 +22,11 @@ async function sendOtpFirstApi(phoneNumber) {
     const data = { phone: phoneNumber };
     const headers = {
         'Accept': 'application/json, text/plain, */*',
-        'Accept-Encoding': 'gzip, deflate, br, zstd',
-        'Accept-Language': 'en-US,en;q=0.5',
-        'Connection': 'keep-alive',
-        'Content-Length': '22',
         'Content-Type': 'application/json;charset=utf-8',
-        'device-id': '046145b7-c21f-406c-9d3c-8a91b9cefe6d',
-        'Host': 'api.jobhai.com',
-        'language': 'en',
-        'Origin': 'https://www.jobhai.com',
-        'Priority': 'u=0',
-        'Referer': 'https://www.jobhai.com/',
-        'Sec-Fetch-Dest': 'empty',
-        'Sec-Fetch-Mode': 'cors',
-        'Sec-Fetch-Site': 'same-site',
+         'Origin': 'https://www.jobhai.com',
+         'Priority': 'u=0',
         'source': 'WEB',
-        'TE': 'trailers',
-        'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:129.0) Gecko/20100101 Firefox/129.0',
-        'x-transaction-id': 'JS-WEB-5c284e8b-7d39-4de3-ab70-97b60a278305'
+        'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:129.0) Gecko/20100101 Firefox/129.0', 
     };
 
     try {
