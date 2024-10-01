@@ -13,7 +13,7 @@ app.use(express.json());
 app.use(express.static(path.join(__dirname, 'public')));
 
 // Webshare Proxy settings
-const proxyUrl = 'http://mflbldce:mvrkp30hptsm@206.41.172.74:6634';
+const proxyUrl = 'http://mflbldce:mvrkp30hptsm@167.160.180.203:6754';
 const proxyAgent = new HttpsProxyAgent(proxyUrl);
 
 // Function to send OTP using the first API
