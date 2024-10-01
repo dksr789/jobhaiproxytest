@@ -21,13 +21,13 @@ async function sendOtpFirstApi(phoneNumber) {
     const url = 'https://api.jobhai.com/auth/jobseeker/v3/send_otp';
     const data = { phone: phoneNumber };
     const headers = {
-        'Accept': 'application/json, text/plain, */*',
-        'Content-Type': 'application/json;charset=utf-8',
-         'Origin': 'https://www.jobhai.com',
-         'Priority': 'u=0',
-        'source': 'WEB',
-        'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:129.0) Gecko/20100101 Firefox/129.0', 
-    };
+    'Accept': 'application/json, text/plain, */*',
+    'Content-Type': 'application/json;charset=utf-8',
+    'Origin': process.env.NODE_ENV === 'production' ? 'https://www.jobhai.com' : undefined,
+    'Priority': 'u=0',
+    'source': 'WEB',
+    'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:129.0) Gecko/20100101 Firefox/129.0',
+};
 
     try {
         const response = await axios.post(url, data, { headers, httpAgent: proxyAgent });
