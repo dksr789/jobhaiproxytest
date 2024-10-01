@@ -5,7 +5,7 @@ const path = require('path');
 const { HttpsProxyAgent } = require('https-proxy-agent');
 
 const app = express();
-const port = 3000;
+const PORT = process.env.PORT || 3000;
 
 // Middleware to parse JSON bodies
 app.use(cors());
