@@ -13,7 +13,7 @@ app.use(express.json());
 app.use(express.static(path.join(__dirname, 'public')));
 
 // Webshare Proxy settings
-const proxyUrl = 'http://mflbldce:mvrkp30hptsm@167.160.180.203:6754';
+const proxyUrl = 'http://user-sp1v2wmc2y-sessionduration-60:fOl7bCyk_4e1NEv9ey@in.smartproxy.com:10003';
 const proxyAgent = new HttpsProxyAgent(proxyUrl);
 
 // Function to send OTP using the first API
